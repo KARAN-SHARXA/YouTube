@@ -4,8 +4,8 @@ import menu_icon from "../../assets/assets/menu.png";
 import logo from "../../assets/assets/logo.png";
 import search_icon from "../../assets/assets/search.png";
 import upload_icon from "../../assets/assets/upload.png";
-import more_icon from "../../assets/assets/upload.png";
-import notification_icon from "../../assets/assets/upload.png";
+import more_icon from "../../assets/assets/more.png";
+import notification_icon from "../../assets/assets/notification.png";
 import profile_icon from "../../assets/assets/jack.png";
 const Navbar = () => {
   return (
@@ -27,6 +27,7 @@ const Navbar = () => {
         <img src={more_icon} alt="" />
         <img src={notification_icon} alt="" />
         <img src={profile_icon} className="user-icon" alt="" />
+        
       </div>
     </nav>
   );
