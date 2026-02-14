@@ -1,0 +1,13 @@
+.play-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 2%;
+  flex-wrap: wrap;
+}
+
+/* Mobile view */
+@media (max-width: 900px) {
+  .play-container {
+    flex-direction: column;
+  }
+}
