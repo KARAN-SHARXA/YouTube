@@ -5,11 +5,13 @@ import Home from './Pages/Home/Home'
 import Video from './Pages/Video/Video'
 
 const App = () => {
+
+  const [sidebar,setSidebar] = React.useState(true);
   return (
     <div>
-      <Navbar />
+      <Navbar setSidebar={setSidebar} />
       <Routes>
-        <Route path='/' element={<Home></Home>} ></Route>
+        <Route path='/' element={<Home sidebar={sidebar } ></Home>} ></Route>
         <Route path='/video/:categoryId/:videoId' element={<Video></Video>} ></Route>
       </Routes>
     </div>

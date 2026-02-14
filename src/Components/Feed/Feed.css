@@ -1,0 +1,97 @@
+/* =========================
+   FEED GRID CONTAINER
+========================= */
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+/* =========================
+   CARD STYLING
+========================= */
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover Lift Effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   THUMBNAIL
+========================= */
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+
+.card h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 10px 6px;
+  color: #000;
+  line-height: 1.4;
+
+  /* 2 line clamp like YouTube */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 10px;
+  color: #606060;
+}
+
+.card p {
+  font-size: 12px;
+  margin: 6px 10px 15px;
+  color: #606060;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+@media (max-width: 1200px) {
+  .feed {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .feed {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .feed {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+
