@@ -1,0 +1,159 @@
+.playvideo {
+  flex-basis: 69%;
+  padding: 20px;
+}
+
+.playvideo video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.playvideo h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.play-video-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.play-video-info div {
+  display: flex;
+  gap: 20px;
+}
+
+.play-video-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.play-video-info span img {
+  width: 18px;
+}
+
+.playvideo hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+/* Publisher section */
+.publisher {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.publisher img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.publisher div {
+  flex: 1;
+}
+
+.publisher div p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.publisher div span {
+  font-size: 13px;
+  color: #666;
+}
+
+.publisher button {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.publisher button:hover {
+  opacity: 0.9;
+}
+
+/* Description */
+.vid-description {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Comments */
+.playvideo h4 {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.comment {
+  display: flex;
+  margin: 20px 0;
+}
+
+.comment img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comment h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment h3 span {
+  font-size: 12px;
+  color: #888;
+  margin-left: 8px;
+}
+
+.comment p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.comment-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.comment-action img {
+  width: 16px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .playvideo {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .play-video-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
