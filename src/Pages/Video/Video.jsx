@@ -1,21 +1,18 @@
-import React from 'react'
-import './Video.css'
-import Playvideo from '../../Components/Playvideo/Playvideo'
-import Recommented from '../../Components/recommented/Recommented'
+import React from "react";
+import "./Video.css";
+import { useParams } from "react-router-dom";
+import Playvideo from "../../Components/Playvideo/Playvideo";
+import Recommented from "../../Components/recommented/Recommented";
 
 function Video() {
+  const { videoId, categoryId } = useParams();
+
   return (
-    <div>
-      <div className="play-container">
-        
-          
-      <Playvideo></Playvideo>
-      <Recommented></Recommented>
-
-      </div>
-
+    <div className="play-container">
+      <Playvideo videoId={videoId} />
+      <Recommented />
     </div>
-  )
+  );
 }
 
-export default Video
+export default Video;
